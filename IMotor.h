@@ -16,6 +16,8 @@ class IMotor
 {
 public:
     IMotor() {} // Empty constructor
+    virtual void Initialie();
+    virtual void WriteAncle();
     virtual void SetSpeed() = 0;
     virtual void Step() = 0;
     // Add a virtual reconstructor !!!

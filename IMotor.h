@@ -16,10 +16,11 @@ class IMotor
 {
 public:
     IMotor() {} // Empty constructor
-    virtual void Initialie();
-    virtual void WriteAncle();
-    virtual void SetSpeed() = 0;
-    virtual void Step() = 0;
+    virtual void Initialize();
+    virtual void SetAngle();
+    virtual void SetMicroseconds() = 0;
+    virtual void ReadAngle();
+    virtual void ReadMicroseconds();
     // Add a virtual reconstructor !!!
-    ~IMotor() {}
+    virtual ~IMotor() {}
 }

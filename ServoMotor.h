@@ -13,13 +13,12 @@ class ServoMotor : public IMotor
 public:
     ServoMotor();
     ServoMotor(uint8_t inPinChannel);
-    ServoMotor(uint8_t inPinChannel, uint16_t inMinRange, uint16_t inMaxRange);
+    ServoMotor(uint8_t , uint16_t , uint16_t );
 
     // Start motor in the mode of test 
     void Initialize();
     // This method is for turning the servo mechanism to a certain angle
-    void WriteAncle(uint16_t inValueAngle);
-
+    void SetAngle(uint16_t);
 
     ~ServoMotor();
 private:

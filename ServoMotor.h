@@ -12,7 +12,7 @@ class ServoMotor : public IMotor
 {
 public:
     ServoMotor();
-    ServoMotor(uint8_t*, uint16_t*, uint16_t* );
+    ServoMotor(uint8_t, uint16_t, uint16_t);
     //  Start motor in the mode of test 
     void Initialize();
     //  This method is for turning the servo mechanism to a certain angle
@@ -28,4 +28,8 @@ private:
     uint8_t pinChanel;          //  PWM pin
     uint16_t minMicroseconds;   //  Minimal value of pulse width microseconds
     uint16_t maxMicroseconds;   //  Maximal value of pulse width microseconds
+    uint16_t settedAngle;
+    uint16_t settedMicroseconds;
+    uint16_t actualAngle;
+    uint16_t actualMicroseconds;
 }

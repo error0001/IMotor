@@ -16,6 +16,10 @@ class IMotor
 {
 public:
 	virtual void info() = 0;
+  // Add a virtual reconstructor !!!
+	virtual ~IMotor() {}
+	// Параметризированный фабричный метод
+	// virtual IMotor* CreateMotor();
 	/*
    IMotor() {} // Empty constructor
    virtual void Initialize();
@@ -24,6 +28,4 @@ public:
    virtual void ReadAngle();
    virtual void ReadMicroseconds();
 	*/
-  // Add a virtual reconstructor !!!
-	virtual ~IMotor();
 };

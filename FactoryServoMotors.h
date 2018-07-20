@@ -4,6 +4,7 @@
 class FactoryServoMotors : public FactoryMotors
 {
 public:
+	FactoryServoMotors();
 	IMotor * CreateMotor();
 private:
 

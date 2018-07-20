@@ -1,6 +1,10 @@
 #include "FactoryServoMotors.h"
 
-IMotor FactoryServoMotors::*CreateMotor()
+FactoryServoMotors::FactoryServoMotors()
+{
+}
+
+IMotor* FactoryServoMotors::CreateMotor()
 {
 	return new ServoMotor;
 }

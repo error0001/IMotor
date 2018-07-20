@@ -1,9 +1,10 @@
 #pragma once
 #include "IMotor.h"
-
 class StepMotor : public IMotor
 {
 public:
+	void Info();
+	/*
     StepMotor(); // Empty constructor
     // 2 pins connection
     StepMotor(uint8_t inNumOfSteps, uint8_t inMotorPin1,  uint8_t inMotorPin2); 
@@ -28,5 +29,5 @@ private:
     void StepMotor(int thisStep); // unknow
     uint8_t numberOfSteps;
     // Pins 
-    
-}
+  */  
+};

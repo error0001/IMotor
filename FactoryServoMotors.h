@@ -1,9 +1,10 @@
 #pragma once
+#include "FactoryMotors.h"
 
-class FactoryServoMotors
+class FactoryServoMotors : public FactoryMotors
 {
 public:
-
+	IMotor * CreateMotor();
 private:
 
 };

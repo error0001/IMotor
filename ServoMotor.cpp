@@ -1,4 +1,13 @@
 #include "ServoMotor.h"
+
+ServoMotor::ServoMotor()
+{
+}
+
+void ServoMotor::Info()
+{
+	std::cout << "Servo motor is created!" << std::endl;
+}
 /*
 ServoMotor::ServoMotor()
 { 

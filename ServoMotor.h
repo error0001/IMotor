@@ -10,8 +10,10 @@
 #include <stdint.h>
 class ServoMotor : public IMotor
 {
-	/*
 public:
+	ServoMotor();
+	void Info();
+	/*
     ServoMotor();
     ServoMotor(const uint8_t&, const uint16_t&, const uint16_t&);
     //  Start motor in the mode of test 

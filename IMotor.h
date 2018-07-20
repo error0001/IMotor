@@ -23,4 +23,4 @@ public:
     virtual void ReadMicroseconds();
     // Add a virtual reconstructor !!!
     virtual ~IMotor() {}
-}
+};

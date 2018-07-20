@@ -1,24 +1,27 @@
 #include "ServoMotor.h"
-
+/*
 ServoMotor::ServoMotor()
 { 
 
 }
 
-ServoMotor::ServoMotor(uint8_t inPinChannel, uint16_t inMinMicroseconds, uint16_t inMaxMicroseconds) :
-inPinChannel = 0, inMinMecroseconds = 600, inMaxMicroseconds = 2200
+ServoMotor::ServoMotor(const uint8_t &inPinChannel, const uint16_t &inMinMicroseconds, const uint16_t &inMaxMicroseconds) 
+: pinChanel(inPinChannel),
+	minMicroseconds(inMinMicroseconds), // min ms (proportional) min angle
+	maxMicroseconds(inMaxMicroseconds)	// max ms (proportional) max angle
 { 
-    // Initialize all periph in here?
-    minMicroseconds = inMinMecroseconds; // min ms (proportional) min angle
-    maxMicroseconds = inMaxMicroseconds; // max ms (proportional) max angle
 }
 //////////////////////////////////////////////////////////////////////////////////////////
-ServoMotor::SetAngle(uint16_t inValueAngle) : inValueAngle = 0
+void ServoMotor::Initialize()
 {
-    
+}
+void ServoMotor::SetAngle(const uint16_t &inValueAngle)
+: valueAngle(inValueAngle)
+{
 }
 
-ServoMotor::SetMicroseconds(uint16_t inValueMicroseconds) : inValueMicroseconds = 0
+void ServoMotor::SetMicroseconds(uint16_t inValueMicroseconds)
+: valueMicroseconds(inValueMicroseconds)
 {
     if(inValueMicroseconds < minMicroseconds)
     {
@@ -44,3 +47,4 @@ ServoMotor::~ServoMotor()
 {
     
 }
+*/

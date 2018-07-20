@@ -28,8 +28,4 @@ private:
     uint8_t pinChanel;          //  PWM pin
     uint16_t minMicroseconds;   //  Minimal value of pulse width microseconds
     uint16_t maxMicroseconds;   //  Maximal value of pulse width microseconds
-    uint16_t settedAngle;
-    uint16_t settedMicroseconds;
-    uint16_t actualAngle;
-    uint16_t actualMicroseconds;
 }

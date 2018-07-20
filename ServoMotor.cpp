@@ -5,10 +5,12 @@ ServoMotor::ServoMotor()
 
 }
 
-ServoMotor::ServoMotor(uint8_t inPinChannel, uint16_t inMinRange, uint16_t inMaxRange) :
-inPinChannel = 0, inMinRange = 600, inMaxRange = 2200
+ServoMotor::ServoMotor(uint8_t inPinChannel, uint16_t inMinMicroseconds, uint16_t inMaxMicroseconds) :
+inPinChannel = 0, inMinMecroseconds = 600, inMaxMicroseconds = 2200
 { 
-    
+    // Initialize all periph in here?
+    minMicroseconds = inMinMecroseconds; // min ms (proportional) min angle
+    maxMicroseconds = inMaxMicroseconds; // max ms (proportional) max angle
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 ServoMotor::SetAngle(uint16_t inValueAngle) : inValueAngle = 0
@@ -16,9 +18,16 @@ ServoMotor::SetAngle(uint16_t inValueAngle) : inValueAngle = 0
     
 }
 
-ServoMotor::SetMicroseconds(uint16_t inValueMicroseconds) inValueMicroseconds = 0
+ServoMotor::SetMicroseconds(uint16_t inValueMicroseconds) : inValueMicroseconds = 0
 {
-
+    if(inValueMicroseconds < minMicroseconds)
+    {
+        
+    }
+    else
+    {
+        
+    }
 }
 
 uint16_t ServoMotor::ReadAngle()

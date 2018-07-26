@@ -12,10 +12,22 @@
 */
 #pragma once
 #include <iostream>
+using namespace std;
 class IMotor
 {
+protected:
+	int32_t pinPwm;
 public:
-	virtual void info() = 0;
+	IMotor() : pinPwm(0) // Clear constructor
+	{
+	}
+	virtual void Info() = 0;
+	//virtual void AttachPinPwm();
+	//virtual void AttachPinPwm(uint16_t&, uint16_t&, uint16_t&) = 0;
+	//virtual void WriteAngle() = 0;
+	//virtual void WriteMicroseconds() = 0;
+	//virtual void ReadAngle() = 0;
+	//virtual void ReadMicroseconds() = 0;
   // Add a virtual reconstructor !!!
 	virtual ~IMotor() {}
 	// Параметризированный фабричный метод

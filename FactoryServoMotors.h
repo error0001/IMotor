@@ -7,6 +7,6 @@ public:
 	FactoryServoMotors();		//	Clear constructor
 	FactoryServoMotors(const FactoryServoMotors&);	//	Constructor of copy 
 	//	FactoryServoMotors& operator=(const FactoryServoMotors&);  //  Assigment operator
-	IMotor* CreateMotor();  //	Create exemplar ServoMotor
+	IMotor* CreateMotor(uint16_t);  //	Create exemplar ServoMotor
 	~FactoryServoMotors();	//	Destructor
 };

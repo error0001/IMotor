@@ -8,9 +8,9 @@ FactoryServoMotors::FactoryServoMotors(const FactoryServoMotors& copyFactory)
 {
 }
 
-IMotor* FactoryServoMotors::CreateMotor()
+IMotor* FactoryServoMotors::CreateMotor(uint16_t inPinPwm)
 {
-	return new ServoMotor;
+	return new ServoMotor(inPinPwm);
 }
 
 FactoryServoMotors::~FactoryServoMotors()

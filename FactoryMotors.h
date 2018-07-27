@@ -3,6 +3,6 @@
 class FactoryMotors
 {
     public:
-        virtual IMotor* CreateMotor() = 0;
-				virtual ~FactoryMotors() {}
+      virtual IMotor* CreateMotor(uint16_t) = 0;
+			virtual ~FactoryMotors() {}
 };
